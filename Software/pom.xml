@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>EWSAvailability</groupId>
+  <artifactId>EWSAvailability</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>EWS Availability</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.microsoft.ews-java-api</groupId>
+  		<artifactId>ews-java-api</artifactId>
+  		<version>2.0</version>
+  	</dependency>
+  	<dependency>
+        <groupId>com.mbed</groupId>
+        <artifactId>mbed-client</artifactId>
+        <version>3.0.0-464</version>
+  	</dependency>
+  </dependencies>
+  <repositories>
+        <repository>
+            <id>mbed repository</id>
+            <url>http://maven.mbed.com</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>
